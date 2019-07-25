@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href='/stylesheets/style.css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+	<title>Fake Mailing List</title>
+</head>
+<body>
+	<div class='flex-container'>
+		<h1>FAKE MAILING LIST</h1>
+  
+		<p>
+			The database contains <strong><%= emailCount %></strong> fake email recipients.
+		</p>
+     
+		<form method='POST' action='/submit'>
+  		<input type='text' name='newEmail' class='form' placeholder='Enter a fake email address' required>
+  		<button>Submit</button>
+		</form>
+	</div>
+</body>
+</html>
