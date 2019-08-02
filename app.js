@@ -10,10 +10,10 @@ app.use(express.static(__dirname + '/public'));
 
 // DATABASE CONNECTION
 var connection = mysql.createConnection({
-	host     : 'localhost',
-	user     : 'root',
+	host     : process.env.MYSQLHOST,
+	user     : process.env.MYSQLUSER,
 	password : process.env.MYSQLPW,
-	database : 'fake_email_db',
+	database : process.env.MYSQLDB,
 });
 
 // INDEX ROUTE
